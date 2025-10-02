@@ -1,17 +1,37 @@
-<!doctype html>
-<html>
-<head>
-  <title>Door Animation</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<!--is this help you?
-  and something i improve tell me in raihanshek530+DoorAnimation@gmail.com -->
-  <div id="frame">
-  <div id="door"></div>
-  </div>
-  <div class="glow"></div>
-  <button id="open">close</button>
-  <script src="script.js"></script>
-</body>
+<!DOCTYPE html>
+<html lang="EN-IN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Unleash your creativity with Canvas Drawing App! Draw freely on an interactive canvas, adjust brush size and color, switch modes, and clear your artwork. Perfect for artists, designers, and hobbyists. Updated October 2025." />
+    <title>Canvas Drawing</title>
+    <link rel="icon" type="image/png" href="img/image.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <canvas
+      id="myCanvas"
+      role="application"
+      aria-label="Interactive drawing canvas"></canvas>
+    <button onclick="clearCanvas()" aria-label="Clear the canvas" class="btn">
+      Clear
+    </button>
+    <button id="change" aria-label="Toggle drawing mode" class="btn">
+      change mode
+    </button>
+
+    <button class="btn1 btn br" aria-label="Decrease brush size">-</button>
+
+    <label for="inp"> Brush size </label>
+    <input id="inp" type="range" min="1" max="100" value="5" />
+    <button class="btn2 btn br" aria-label="Increase brush size">+</button>
+    <p id="msg" aria-label="current brush size"></p>
+    <label for="color"> Brush color </label>
+    <input type="color" id="color" value="#ffffff" />
+
+    <script src="script.js"></script>
+  </body>
 </html>
